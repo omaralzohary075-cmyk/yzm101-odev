@@ -1,7 +1,7 @@
 # YZM101 - Ödev: Algoritma ve Dokümantasyon
 
-* **Öğrenci Adı Soyadı:** [OMAR MOHAMED KAMAL KAMEL ELZOH] 
-* **Öğrenci Numarası:** [250411079] 
+* **Öğrenci Adı Soyadı:** Ömer Muhammed Kamil Elzuhari
+* **Öğrenci Numarası:** 250411079
 * **Seçilen Senaryo:** Senaryo B (Öğrenci Not Değerlendirme)
 
 ## 1. Problem Tanımı ve Süreç
@@ -25,8 +25,6 @@ Bu sistem, bir öğrencinin vize ve final notlarını girdi olarak alır. Alına
 ```
 
 ## 3. Akış Şeması (Flowchart)
-## 3. Akış Şeması (Flowchart)
-
 ```mermaid
 flowchart TD
     A([BAŞLA]) --> B[/GİRDİ: Vize ve Final Notu/]
@@ -59,3 +57,10 @@ flowchart TD
     O --> Z
     P --> Z
 ```
+
+## 4. Kullanılan Araçlar ve Karşılaşılan Zorluklar
+* **Akış Şeması Aracı:** draw.io
+* **Kışá Değerlendirme:** Bu ödevi tamamlarken en çok zorlandığınız nokta, harf notu aralıklarının karar bloklarını akış şemasında ardışık olarak doğru ve düzenli bir şekilde yerleştirmek oldu.
+
+## 5. Depo Bağlantısı
+[https://github.com](https://github.com)
