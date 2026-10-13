@@ -25,11 +25,37 @@ Bu sistem, bir öğrencinin vize ve final notlarını girdi olarak alır. Alına
 ```
 
 ## 3. Akış Şeması (Flowchart)
-![Öğrenci Not Değerlendirme Akış Şeması](assets/flowchart.png)
+## 3. Akış Şeması (Flowchart)
 
-## 4. Kullanılan Araçlar ve Karşılaşılan Zorluklar
-* **Akış Şeması Aracı:** draw.io
-* **Kısa Değerlendirme:** Bu ödevi tamamlarken en çok zorlandığınız nokta, harf notu aralıklarının karar bloklarını akış şemasında ardışık olarak doğru ve düzenli bir şekilde yerleştirmek oldu.
-
-## 5. Depo Bağlantısı
-[https://github.com](https://github.com)
+```mermaid
+flowchart TD
+    A([BAŞLA]) --> B[/GİRDİ: Vize ve Final Notu/]
+    B --> C[İŞLEM: Ortalama = Vize * 0.4 + Final * 0.6]
+    C --> D{Ortalama < 40?}
+    
+    D -- Evet --> E[/ÇIKTI: 'Kaldı'/]
+    D -- Hayır --> F{Ortalama >= 90?}
+    
+    F -- Evet --> G[/ÇIKTI: 'AA'/]
+    F -- Hayır --> H{Ortalama >= 80?}
+    
+    H -- Evet --> I[/ÇIKTI: 'BA'/]
+    H -- Hayır --> J{Ortalama >= 70?}
+    
+    J -- Evet --> K[/ÇIKTI: 'BB'/]
+    J -- Hayır --> L{Ortalama >= 60?}
+    
+    L -- Evet --> M[/ÇIKTI: 'CB'/]
+    L -- Hayır --> N{Ortalama >= 50?}
+    
+    N -- Evet --> O[/ÇIKTI: 'CC'/]
+    N -- Hayır --> P[/ÇIKTI: 'DC'/]
+    
+    E --> Z([BİTİR])
+    G --> Z
+    I --> Z
+    K --> Z
+    M --> Z
+    O --> Z
+    P --> Z
+```
